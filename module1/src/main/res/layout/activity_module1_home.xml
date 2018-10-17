@@ -5,18 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Module1HomeAct"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="我是模块1" />
 
     <Button
-        android:id="@+id/bt_into_module1"
+        android:id="@+id/bt_get_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="进入模块一" />
-
-    <Button
-        android:id="@+id/bt_into_module2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="进入模块二" />
+        android:text="获取模块2的数据" />
 
 </LinearLayout>
