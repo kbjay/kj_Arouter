@@ -8,6 +8,9 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.example.base.arouter.ArouterManager;
 
+/**
+ * 声明url，可以做为arouter的跳转目标
+ */
 @Route(path = ArouterManager.TargetUrl.MODULE1_HOME)
 public class Module1HomeAct extends AppCompatActivity {
 
