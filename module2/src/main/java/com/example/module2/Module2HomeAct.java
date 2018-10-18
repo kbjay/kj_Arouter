@@ -27,8 +27,6 @@ public class Module2HomeAct extends AppCompatActivity {
 
     private void jump2module1() {
         //带参数跳转到module1
-        ARouter.getInstance().build(ArouterManager.TargetUrl.MODULE1_HOME)
-                .withLong("test", 666L)
-                .navigation();
+        ArouterManager.JumpCenter.jump(ArouterManager.TargetUrl.MODULE1_HOME, "666");
     }
 }

@@ -43,10 +43,20 @@ public class ArouterManager {
             return mArouterService.getModule2Data();
         }
     }
+
     /**
      * Module1的消息中心，可以通过它将数据传递给module2
      */
-    public static class Module1MsgCenter{
+    public static class Module1MsgCenter {
         // TODO: 2018/10/17
+    }
+
+    /**
+     * 跳转中心
+     */
+    public static class JumpCenter {
+        public static void jump(String target, String jsonString) {
+            ARouter.getInstance().build(target).withString("data", jsonString).navigation();
+        }
     }
 }

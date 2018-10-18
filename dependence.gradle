@@ -1,0 +1,12 @@
+ext {
+    android = [
+            compileSdkVersion: 27,
+            minSdkVersion    : 19,
+            targetSdkVersion : 25
+    ]
+    dependence = [
+            "arouter"         : 'com.alibaba:arouter-api:1.4.0',
+            "arouter-compiler": 'com.alibaba:arouter-compiler:1.2.1',
+            "support"         : 'com.android.support:appcompat-v7:27.0.0'
+    ]
+}

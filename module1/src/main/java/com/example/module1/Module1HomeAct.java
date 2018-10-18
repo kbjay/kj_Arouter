@@ -2,6 +2,7 @@ package com.example.module1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,8 +22,8 @@ public class Module1HomeAct extends AppCompatActivity {
 
         //获取module2的数据
         if (getIntent() != null) {
-            long test = getIntent().getLongExtra("test", 0L);
-            if (test != 0) {
+            String test = getIntent().getStringExtra("data");
+            if (!TextUtils.isEmpty(test)) {
                 Toast.makeText(this, test + "", Toast.LENGTH_SHORT).show();
             }
         }
